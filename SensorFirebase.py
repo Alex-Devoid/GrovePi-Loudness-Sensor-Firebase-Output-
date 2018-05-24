@@ -2,7 +2,7 @@
 
 '''
 I run this script with python 3.5.2
-This scrip simply merges the GrovePi Loundness Sensor example script with Prybase.
+This scrip simply merges the GrovePi Loundness Sensor example script with Pyrebase.
 It sends the sensor's output to Firebase.
 https://github.com/DexterInd/GrovePi/blob/master/Software/Python/grove_loudness_sensor.py
 https://github.com/thisbejim/Pyrebase
@@ -71,8 +71,8 @@ while 1:
     randData1 = randint(0,60)
     print(randData1)
 
-    
-    datestamp = "%d-%d-%dT%d:%d:%d"%((date[0] %10000),date[1],date[2],date[3],date[4], date[5]) 
+
+    datestamp = "%d-%d-%dT%d:%d:%d"%((date[0] %10000),date[1],date[2],date[3],date[4], date[5])
     data = {"time": time, "y": randData1}
     db.child("data").push(data)
     print(str(datestamp))
