@@ -2,7 +2,7 @@
 
 '''
 I run this script with python 3.5.2
-This scrip simply merges the GrovePi Loundness Sensor example script with Pyrebase.
+This script simply merges the GrovePi Loundness Sensor example script with Pyrebase.
 It sends the sensor's output to Firebase.
 https://github.com/DexterInd/GrovePi/blob/master/Software/Python/grove_loudness_sensor.py
 https://github.com/thisbejim/Pyrebase
